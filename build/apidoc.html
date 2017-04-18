@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.ssh2">
+            function <span class="apidocSignatureSpan"></span>ssh2
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.ssh2.Channel">
             function <span class="apidocSignatureSpan">ssh2.</span>Channel
             <span class="apidocSignatureSpan">(info, client, opts)</span>
@@ -118,6 +127,12 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ssh2.</span>Channel.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ssh2.</span>Client.prototype</span>
 
         </li>
 
@@ -263,6 +278,185 @@
             <a class="apidocElementLiA" href="#apidoc.element.ssh2.Channel.prototype.signal">
             function <span class="apidocSignatureSpan">ssh2.Channel.prototype.</span>signal
             <span class="apidocSignatureSpan">(signalName)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ssh2.Client">module ssh2.Client</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.Client">
+            function <span class="apidocSignatureSpan">ssh2.</span>Client
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.Server">
+            function <span class="apidocSignatureSpan">ssh2.Client.</span>Server
+            <span class="apidocSignatureSpan">(cfg, listener)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.super_">
+            function <span class="apidocSignatureSpan">ssh2.Client.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ssh2.Client.</span>SFTP_OPEN_MODE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ssh2.Client.</span>SFTP_STATUS_CODE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ssh2.Client.</span>utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ssh2.Client.prototype">module ssh2.Client.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.prototype.connect">
+            function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>connect
+            <span class="apidocSignatureSpan">(cfg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.prototype.destroy">
+            function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>destroy
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.prototype.end">
+            function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>end
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.prototype.exec">
+            function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>exec
+            <span class="apidocSignatureSpan">(cmd, opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.prototype.forwardIn">
+            function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>forwardIn
+            <span class="apidocSignatureSpan">(bindAddr, bindPort, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.prototype.forwardOut">
+            function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>forwardOut
+            <span class="apidocSignatureSpan">(srcIP, srcPort, dstIP, dstPort, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.prototype.openssh_forwardInStreamLocal">
+            function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>openssh_forwardInStreamLocal
+            <span class="apidocSignatureSpan">(socketPath, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.prototype.openssh_forwardOutStreamLocal">
+            function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>openssh_forwardOutStreamLocal
+            <span class="apidocSignatureSpan">(socketPath, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.prototype.openssh_noMoreSessions">
+            function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>openssh_noMoreSessions
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.prototype.openssh_unforwardInStreamLocal">
+            function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>openssh_unforwardInStreamLocal
+            <span class="apidocSignatureSpan">(socketPath, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.prototype.sftp">
+            function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>sftp
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.prototype.shell">
+            function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>shell
+            <span class="apidocSignatureSpan">(wndopts, opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.prototype.subsys">
+            function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>subsys
+            <span class="apidocSignatureSpan">(name, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ssh2.Client.prototype.unforwardIn">
+            function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>unforwardIn
+            <span class="apidocSignatureSpan">(bindAddr, bindPort, cb)</span>
             </a>
 
         </li>
@@ -952,6 +1146,60 @@
 
 
     <h2>
+        <a href="#apidoc.element.ssh2.ssh2" id="apidoc.element.ssh2.ssh2">
+        function <span class="apidocSignatureSpan"></span>ssh2
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Client() {
+  if (!(this instanceof Client))
+    return new Client();
+
+  EventEmitter.call(this);
+
+  this.config = {
+    host: undefined,
+    port: undefined,
+    forceIPv4: undefined,
+    forceIPv6: undefined,
+    keepaliveCountMax: undefined,
+    keepaliveInterval: undefined,
+    readyTimeout: undefined,
+
+    username: undefined,
+    password: undefined,
+    privateKey: undefined,
+    publicKey: undefined,
+    tryKeyboard: undefined,
+    agent: undefined,
+    allowAgentFwd: undefined,
+
+    hostHashAlgo: undefined,
+    hostHashCb: undefined,
+    strictVendor: undefined,
+    debug: undefined
+  };
+
+  this._readyTimeout = undefined;
+  this._channels = undefined;
+  this._callbacks = undefined;
+  this._forwarding = undefined;
+  this._acceptX11 = undefined;
+  this._agentFwdEnabled = undefined;
+  this._curChan = undefined;
+  this._remoteVer = undefined;
+
+  this._sshstream = undefined;
+  this._sock = undefined;
+  this._resetKA = undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.ssh2.Channel" id="apidoc.element.ssh2.Channel">
         function <span class="apidocSignatureSpan">ssh2.</span>Channel
         <span class="apidocSignatureSpan">(info, client, opts)</span>
@@ -1402,6 +1650,8 @@ client.on(&#x27;authentication&#x27;, function(ctx) {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
+
+
 
 
 
@@ -1946,6 +2196,1079 @@ Channel.prototype.exit = function(name, coreDumped, msg) {
 if (!this.server)
   throw new Error(&#x27;Server-only method called in client mode&#x27;);
 ...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ssh2.Client" id="apidoc.module.ssh2.Client">module ssh2.Client</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.Client" id="apidoc.element.ssh2.Client.Client">
+        function <span class="apidocSignatureSpan">ssh2.</span>Client
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Client() {
+  if (!(this instanceof Client))
+    return new Client();
+
+  EventEmitter.call(this);
+
+  this.config = {
+    host: undefined,
+    port: undefined,
+    forceIPv4: undefined,
+    forceIPv6: undefined,
+    keepaliveCountMax: undefined,
+    keepaliveInterval: undefined,
+    readyTimeout: undefined,
+
+    username: undefined,
+    password: undefined,
+    privateKey: undefined,
+    publicKey: undefined,
+    tryKeyboard: undefined,
+    agent: undefined,
+    allowAgentFwd: undefined,
+
+    hostHashAlgo: undefined,
+    hostHashCb: undefined,
+    strictVendor: undefined,
+    debug: undefined
+  };
+
+  this._readyTimeout = undefined;
+  this._channels = undefined;
+  this._callbacks = undefined;
+  this._forwarding = undefined;
+  this._acceptX11 = undefined;
+  this._agentFwdEnabled = undefined;
+  this._curChan = undefined;
+  this._remoteVer = undefined;
+
+  this._sshstream = undefined;
+  this._sock = undefined;
+  this._resetKA = undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.Server" id="apidoc.element.ssh2.Client.Server">
+        function <span class="apidocSignatureSpan">ssh2.Client.</span>Server
+        <span class="apidocSignatureSpan">(cfg, listener)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Server(cfg, listener) {
+  if (!(this instanceof Server))
+    return new Server(cfg, listener);
+
+  var hostKeys = {
+    &#x27;ssh-rsa&#x27;: null,
+    &#x27;ssh-dss&#x27;: null,
+    &#x27;ecdsa-sha2-nistp256&#x27;: null,
+    &#x27;ecdsa-sha2-nistp384&#x27;: null,
+    &#x27;ecdsa-sha2-nistp521&#x27;: null
+  };
+
+  var hostKeys_ = cfg.hostKeys;
+  if (!Array.isArray(hostKeys_))
+    throw new Error(&#x27;hostKeys must be an array&#x27;);
+
+  var i;
+  for (i = 0; i &#x3c; hostKeys_.length; ++i) {
+    var privateKey;
+    if (Buffer.isBuffer(hostKeys_[i]) || typeof hostKeys_[i] === &#x27;string&#x27;)
+      privateKey = parseKey(hostKeys_[i]);
+    else
+      privateKey = parseKey(hostKeys_[i].key);
+    if (privateKey instanceof Error)
+      throw new Error(&#x27;Cannot parse privateKey: &#x27; + privateKey.message);
+    if (!privateKey.private)
+      throw new Error(&#x27;privateKey value contains an invalid private key&#x27;);
+    if (hostKeys[privateKey.fulltype])
+      continue;
+    if (privateKey.encryption) {
+      if (typeof hostKeys_[i].passphrase !== &#x27;string&#x27;)
+        throw new Error(&#x27;Missing passphrase for encrypted private key&#x27;);
+      decryptKey(privateKey, hostKeys_[i].passphrase);
+    }
+    hostKeys[privateKey.fulltype] = {
+      privateKey: privateKey,
+      publicKey: genPublicKey(privateKey)
+    };
+  }
+
+  var algorithms = {
+    kex: undefined,
+    kexBuf: undefined,
+    cipher: undefined,
+    cipherBuf: undefined,
+    serverHostKey: undefined,
+    serverHostKeyBuf: undefined,
+    hmac: undefined,
+    hmacBuf: undefined,
+    compress: undefined,
+    compressBuf: undefined
+  };
+  if (typeof cfg.algorithms === &#x27;object&#x27; &#x26;&#x26; cfg.algorithms !== null) {
+    var algosSupported;
+    var algoList;
+
+    algoList = cfg.algorithms.kex;
+    if (Array.isArray(algoList) &#x26;&#x26; algoList.length &#x3e; 0) {
+      algosSupported = ALGORITHMS.SUPPORTED_KEX;
+      for (i = 0; i &#x3c; algoList.length; ++i) {
+        if (algosSupported.indexOf(algoList[i]) === -1)
+          throw new Error(&#x27;Unsupported key exchange algorithm: &#x27; + algoList[i]);
+      }
+      algorithms.kex = algoList;
+    }
+
+    algoList = cfg.algorithms.cipher;
+    if (Array.isArray(algoList) &#x26;&#x26; algoList.length &#x3e; 0) {
+      algosSupported = ALGORITHMS.SUPPORTED_CIPHER;
+      for (i = 0; i &#x3c; algoList.length; ++i) {
+        if (algosSupported.indexOf(algoList[i]) === -1)
+          throw new Error(&#x27;Unsupported cipher algorithm: &#x27; + algoList[i]);
+      }
+      algorithms.cipher = algoList;
+    }
+
+    algoList = cfg.algorithms.serverHostKey;
+    var copied = false;
+    if (Array.isArray(algoList) &#x26;&#x26; algoList.length &#x3e; 0) {
+      algosSupported = ALGORITHMS.SUPPORTED_SERVER_HOST_KEY;
+      for (i = algoList.length - 1; i &#x3e;= 0; --i) {
+        if (algosSupported.indexOf(algoList[i]) === -1) {
+          throw new Error(&#x27;Unsupported server host key algorithm: &#x27;
+                           + algoList[i]);
+        }
+        if (!hostKeys[algoList[i]]) {
+          // Silently discard for now
+          if (!copied) {
+            algoList = algoList.slice();
+            copied = true;
+          }
+          algoList.splice(i, 1);
+        }
+      }
+      if (algoList.length &#x3e; 0)
+        algorithms.serverHostKey = algoList;
+    }
+
+    algoList = cfg.algorithms.hmac;
+    if (Array.isArray(algoList) &#x26;&#x26; algoList.length &#x3e; 0) {
+      algosSupported = ALGORITHMS.SUPPORTED_HMAC;
+      for (i = 0; i &#x3c; algoList.length; ++i) {
+        if (algosSupported.indexOf(algoList[i]) === -1)
+          throw new Error(&#x27;Unsupported HMAC algorithm: &#x27; + algoList[i]);
+      }
+      algorithms.hmac = algoList;
+    }
+
+    algoList = cfg.algorithms.compress;
+    if (Array.isArray(algoList) &#x26;&#x26; algoList.length &#x3e; 0) {
+      algosSupported = ALGORITHMS.SUPPORTED_COMPRESS;
+      for (i = 0; i &#x3c; algoList.length; ++i) {
+        if (algosSupported.indexOf(algoList[i]) === -1)
+          throw new Error(&#x27;Unsupported compression algorithm: &#x27; + algoList[i]);
+      }
+      algorithms.compress = algoList;
+    }
+  }
+
+  // Make sure we at least have some kind of valid list of support key
+  // formats
+  if (algorithms.serverHostKey === undefined) {
+    var hostKeyAlgos = Object.keys(hostKeys);
+    for (i = hostKeyAlgos.length - 1; i ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var buffersEqual = require(&#x27;buffer-equal-constant-time&#x27;);
+var ssh2 = require(&#x27;ssh2&#x27;);
+var utils = ssh2.utils;
+
+var pubKey = utils.genPublicKey(utils.parseKey(fs.readFileSync(&#x27;user.pub&#x27;)));
+
+new ssh2.<span class="apidocCodeKeywordSpan">Server</span>({
+hostKeys: [fs.readFileSync(&#x27;host.key&#x27;)]
+}, function(client) {
+console.log(&#x27;Client connected!&#x27;);
+
+client.on(&#x27;authentication&#x27;, function(ctx) {
+  if (ctx.method === &#x27;password&#x27;
+      &#x26;&#x26; ctx.username === &#x27;foo&#x27;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.super_" id="apidoc.element.ssh2.Client.super_">
+        function <span class="apidocSignatureSpan">ssh2.Client.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ssh2.Client.prototype" id="apidoc.module.ssh2.Client.prototype">module ssh2.Client.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.prototype.connect" id="apidoc.element.ssh2.Client.prototype.connect">
+        function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>connect
+        <span class="apidocSignatureSpan">(cfg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">connect = function (cfg) {
+  var self = this;
+
+  if (this._sock &#x26;&#x26; this._sock.writable) {
+    this.once(&#x27;close&#x27;, function() {
+      self.connect(cfg);
+    });
+    this.end();
+    return;
+  }
+
+  this.config.host = cfg.hostname || cfg.host || &#x27;localhost&#x27;;
+  this.config.port = cfg.port || 22;
+  this.config.forceIPv4 = cfg.forceIPv4 || false;
+  this.config.forceIPv6 = cfg.forceIPv6 || false;
+  this.config.keepaliveCountMax = (typeof cfg.keepaliveCountMax === &#x27;number&#x27;
+                                   &#x26;&#x26; cfg.keepaliveCountMax &#x3e;= 0
+                                   ? cfg.keepaliveCountMax
+                                   : 3);
+  this.config.keepaliveInterval = (typeof cfg.keepaliveInterval === &#x27;number&#x27;
+                                   &#x26;&#x26; cfg.keepaliveInterval &#x3e; 0
+                                   ? cfg.keepaliveInterval
+                                   : 0);
+  this.config.readyTimeout = (typeof cfg.readyTimeout === &#x27;number&#x27;
+                              &#x26;&#x26; cfg.readyTimeout &#x3e;= 0
+                              ? cfg.readyTimeout
+                              : 20000);
+
+  var algorithms = {
+    kex: undefined,
+    kexBuf: undefined,
+    cipher: undefined,
+    cipherBuf: undefined,
+    serverHostKey: undefined,
+    serverHostKeyBuf: undefined,
+    hmac: undefined,
+    hmacBuf: undefined,
+    compress: undefined,
+    compressBuf: undefined
+  };
+  var i;
+  if (typeof cfg.algorithms === &#x27;object&#x27; &#x26;&#x26; cfg.algorithms !== null) {
+    var algosSupported;
+    var algoList;
+
+    algoList = cfg.algorithms.kex;
+    if (Array.isArray(algoList) &#x26;&#x26; algoList.length &#x3e; 0) {
+      algosSupported = ALGORITHMS.SUPPORTED_KEX;
+      for (i = 0; i &#x3c; algoList.length; ++i) {
+        if (algosSupported.indexOf(algoList[i]) === -1)
+          throw new Error(&#x27;Unsupported key exchange algorithm: &#x27; + algoList[i]);
+      }
+      algorithms.kex = algoList;
+    }
+
+    algoList = cfg.algorithms.cipher;
+    if (Array.isArray(algoList) &#x26;&#x26; algoList.length &#x3e; 0) {
+      algosSupported = ALGORITHMS.SUPPORTED_CIPHER;
+      for (i = 0; i &#x3c; algoList.length; ++i) {
+        if (algosSupported.indexOf(algoList[i]) === -1)
+          throw new Error(&#x27;Unsupported cipher algorithm: &#x27; + algoList[i]);
+      }
+      algorithms.cipher = algoList;
+    }
+
+    algoList = cfg.algorithms.serverHostKey;
+    if (Array.isArray(algoList) &#x26;&#x26; algoList.length &#x3e; 0) {
+      algosSupported = ALGORITHMS.SUPPORTED_SERVER_HOST_KEY;
+      for (i = 0; i &#x3c; algoList.length; ++i) {
+        if (algosSupported.indexOf(algoList[i]) === -1) {
+          throw new Error(&#x27;Unsupported server host key algorithm: &#x27;
+                           + algoList[i]);
+        }
+      }
+      algorithms.serverHostKey = algoList;
+    }
+
+    algoList = cfg.algorithms.hmac;
+    if (Array.isArray(algoList) &#x26;&#x26; algoList.length &#x3e; 0) {
+      algosSupported = ALGORITHMS.SUPPORTED_HMAC;
+      for (i = 0; i &#x3c; algoList.length; ++i) {
+        if (algosSupported.indexOf(algoList[i]) === -1)
+          throw new Error(&#x27;Unsupported HMAC algorithm: &#x27; + algoList[i]);
+      }
+      algorithms.hmac = algoList;
+    }
+
+    algoList = cfg.algorithms.compress;
+    if (Array.isArray(algoList) &#x26;&#x26; algoList.length &#x3e; 0) {
+      algosSupported = ALGORITHMS.SUPPORTED_COMPRESS;
+      for (i = 0; i &#x3c; algoList.length; ++i) {
+        if (algosSupported.indexOf(algoList[i]) === -1)
+          throw new Error(&#x27;Unsupported compression algorithm: &#x27; + algoList[i]);
+      }
+      algorithms.compress = algoList;
+    }
+  }
+  if (algorithms.compress === undefined) {
+    if (cfg.compress) {
+      algorithms.compress = [&#x27;zlib@openssh.com&#x27;, &#x27;zlib&#x27;];
+      if (cfg.compress !== &#x27;force&#x27;)
+        algorithms.compress.push(&#x27;none&#x27;);
+    } else if (cfg.compress === false)
+      algorithms.compress = [&#x27;none&#x27;];
+  }
+
+  this.config.username = cfg.username || cfg.user;
+  this.config.password = (typeof cfg.password === &#x27;string&#x27;
+                          ? cfg.password
+                          : undefined);
+  this.config.privateKey = (typeof cfg.privateKey === &#x27;string&#x27;
+                            || Buffer.isBuffer(cfg.privateKey)
+                            ? cfg.privateKey ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      conn.end();
+    }).on(&#x27;data&#x27;, function(data) {
+      console.log(&#x27;STDOUT: &#x27; + data);
+    }).stderr.on(&#x27;data&#x27;, function(data) {
+      console.log(&#x27;STDERR: &#x27; + data);
+    });
+  });
+}).<span class="apidocCodeKeywordSpan">connect</span>({
+  host: &#x27;192.168.100.100&#x27;,
+  port: 22,
+  username: &#x27;frylock&#x27;,
+  privateKey: require(&#x27;fs&#x27;).readFileSync(&#x27;/here/is/my/key&#x27;)
+});
+
+// example output:
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.prototype.destroy" id="apidoc.element.ssh2.Client.prototype.destroy">
+        function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>destroy
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">destroy = function () {
+  this._sock &#x26;&#x26; this._sock.destroy();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      sig = new Buffer(siglen);
+      count = 0;
+    }
+  } else {
+    sig[count] = chunk[i];
+    if (++count === siglen) {
+      sock.removeAllListeners(&#x27;data&#x27;);
+      return sock.<span class="apidocCodeKeywordSpan">destroy</span>();
+    }
+  }
+} else if (type === IDENTITIES_ANSWER) {
+  /*
+    byte        SSH2_AGENT_IDENTITIES_ANSWER
+    uint32      num_keys
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.prototype.end" id="apidoc.element.ssh2.Client.prototype.end">
+        function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>end
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">end = function () {
+  if (this._sock
+      &#x26;&#x26; this._sock.writable
+      &#x26;&#x26; this._sshstream
+      &#x26;&#x26; this._sshstream.writable)
+    return this._sshstream.disconnect();
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var conn = new Client();
+conn.on(&#x27;ready&#x27;, function() {
+  console.log(&#x27;Client :: ready&#x27;);
+  conn.exec(&#x27;uptime&#x27;, function(err, stream) {
+    if (err) throw err;
+    stream.on(&#x27;close&#x27;, function(code, signal) {
+      console.log(&#x27;Stream :: close :: code: &#x27; + code + &#x27;, signal: &#x27; + signal);
+      conn.<span class="apidocCodeKeywordSpan">end</span>();
+    }).on(&#x27;data&#x27;, function(data) {
+      console.log(&#x27;STDOUT: &#x27; + data);
+    }).stderr.on(&#x27;data&#x27;, function(data) {
+      console.log(&#x27;STDERR: &#x27; + data);
+    });
+  });
+}).connect({
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.prototype.exec" id="apidoc.element.ssh2.Client.prototype.exec">
+        function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>exec
+        <span class="apidocSignatureSpan">(cmd, opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">exec = function (cmd, opts, cb) {
+  if (!this._sock
+      || !this._sock.writable
+      || !this._sshstream
+      || !this._sshstream.writable)
+    throw new Error(&#x27;Not connected&#x27;);
+
+  if (typeof opts === &#x27;function&#x27;) {
+    cb = opts;
+    opts = {};
+  }
+
+  var self = this;
+  var extraOpts = { allowHalfOpen: (opts.allowHalfOpen !== false) };
+
+  return openChannel(this, &#x27;session&#x27;, extraOpts, function(err, chan) {
+    if (err)
+      return cb(err);
+
+    var todo = [];
+
+    function reqCb(err) {
+      if (err) {
+        chan.close();
+        return cb(err);
+      }
+      if (todo.length)
+        todo.shift()();
+    }
+
+    if (self.config.allowAgentFwd === true
+        || (opts
+            &#x26;&#x26; opts.agentForward === true
+            &#x26;&#x26; self.config.agent !== undefined)) {
+      todo.push(function() {
+        reqAgentFwd(chan, reqCb);
+      });
+    }
+
+    if (typeof opts === &#x27;object&#x27;) {
+      if (typeof opts.env === &#x27;object&#x27;)
+        reqEnv(chan, opts.env);
+      if (typeof opts.pty === &#x27;object&#x27; || opts.pty === true)
+        todo.push(function() { reqPty(chan, opts.pty, reqCb); });
+      if (typeof opts.x11 === &#x27;object&#x27;
+          || opts.x11 === &#x27;number&#x27;
+          || opts.x11 === true)
+        todo.push(function() { reqX11(chan, opts.x11, reqCb); });
+    }
+
+    todo.push(function() { reqExec(chan, cmd, opts, cb); });
+    todo.shift()();
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+```javascript
+var Client = require(&#x27;ssh2&#x27;).Client;
+
+var conn = new Client();
+conn.on(&#x27;ready&#x27;, function() {
+console.log(&#x27;Client :: ready&#x27;);
+conn.<span class="apidocCodeKeywordSpan">exec</span>(&#x27;uptime&#x27;, function(err, stream) {
+  if (err) throw err;
+  stream.on(&#x27;close&#x27;, function(code, signal) {
+    console.log(&#x27;Stream :: close :: code: &#x27; + code + &#x27;, signal: &#x27; + signal);
+    conn.end();
+  }).on(&#x27;data&#x27;, function(data) {
+    console.log(&#x27;STDOUT: &#x27; + data);
+  }).stderr.on(&#x27;data&#x27;, function(data) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.prototype.forwardIn" id="apidoc.element.ssh2.Client.prototype.forwardIn">
+        function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>forwardIn
+        <span class="apidocSignatureSpan">(bindAddr, bindPort, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">forwardIn = function (bindAddr, bindPort, cb) {
+  if (!this._sock
+      || !this._sock.writable
+      || !this._sshstream
+      || !this._sshstream.writable)
+    throw new Error(&#x27;Not connected&#x27;);
+
+  // send a request for the server to start forwarding TCP connections to us
+  // on a particular address and port
+
+  var self = this;
+  var wantReply = (typeof cb === &#x27;function&#x27;);
+
+  if (wantReply) {
+    this._callbacks.push(function(had_err, data) {
+      if (had_err) {
+        return cb(had_err !== true
+                  ? had_err
+                  : new Error(&#x27;Unable to bind to &#x27; + bindAddr + &#x27;:&#x27; + bindPort));
+      }
+
+      var realPort = bindPort;
+      if (bindPort === 0 &#x26;&#x26; data &#x26;&#x26; data.length &#x3e;= 4) {
+        realPort = data.readUInt32BE(0, true);
+        if (!(self._sshstream.remoteBugs &#x26; BUGS.DYN_RPORT_BUG))
+          bindPort = realPort;
+      }
+
+      self._forwarding[bindAddr + &#x27;:&#x27; + bindPort] = realPort;
+
+      cb(undefined, realPort);
+    });
+  }
+
+  return this._sshstream.tcpipForward(bindAddr, bindPort, wantReply);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+```javascript
+var Client = require(&#x27;ssh2&#x27;).Client;
+
+var conn = new Client();
+conn.on(&#x27;ready&#x27;, function() {
+console.log(&#x27;Client :: ready&#x27;);
+conn.<span class="apidocCodeKeywordSpan">forwardIn</span>(&#x27;127.0.0.1&#x27;, 8000, function(err) {
+  if (err) throw err;
+  console.log(&#x27;Listening for connections on server on port 8000!&#x27;);
+});
+}).on(&#x27;tcp connection&#x27;, function(info, accept, reject) {
+console.log(&#x27;TCP :: INCOMING CONNECTION:&#x27;);
+console.dir(info);
+accept().on(&#x27;close&#x27;, function() {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.prototype.forwardOut" id="apidoc.element.ssh2.Client.prototype.forwardOut">
+        function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>forwardOut
+        <span class="apidocSignatureSpan">(srcIP, srcPort, dstIP, dstPort, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">forwardOut = function (srcIP, srcPort, dstIP, dstPort, cb) {
+  if (!this._sock
+      || !this._sock.writable
+      || !this._sshstream
+      || !this._sshstream.writable)
+    throw new Error(&#x27;Not connected&#x27;);
+
+  // send a request to forward a TCP connection to the server
+
+  var cfg = {
+    srcIP: srcIP,
+    srcPort: srcPort,
+    dstIP: dstIP,
+    dstPort: dstPort
+  };
+
+  return openChannel(this, &#x27;direct-tcpip&#x27;, cfg, cb);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+```javascript
+var Client = require(&#x27;ssh2&#x27;).Client;
+
+var conn = new Client();
+conn.on(&#x27;ready&#x27;, function() {
+console.log(&#x27;Client :: ready&#x27;);
+conn.<span class="apidocCodeKeywordSpan">forwardOut</span>(&#x27;192.168.100.102&#x27;, 8000, &#x27;127.0.0.1&#x27;, 80, function
+(err, stream) {
+  if (err) throw err;
+  stream.on(&#x27;close&#x27;, function() {
+    console.log(&#x27;TCP :: CLOSED&#x27;);
+    conn.end();
+  }).on(&#x27;data&#x27;, function(data) {
+    console.log(&#x27;TCP :: DATA: &#x27; + data);
+  }).end([
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.prototype.openssh_forwardInStreamLocal" id="apidoc.element.ssh2.Client.prototype.openssh_forwardInStreamLocal">
+        function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>openssh_forwardInStreamLocal
+        <span class="apidocSignatureSpan">(socketPath, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">openssh_forwardInStreamLocal = function (socketPath, cb) {
+  if (!this._sock
+      || !this._sock.writable
+      || !this._sshstream
+      || !this._sshstream.writable)
+    throw new Error(&#x27;Not connected&#x27;);
+
+  var wantReply = (typeof cb === &#x27;function&#x27;);
+
+  if (!this.config.strictVendor
+      || (this.config.strictVendor &#x26;&#x26; RE_OPENSSH.test(this._remoteVer))) {
+    if (wantReply) {
+      this._callbacks.push(function(had_err) {
+        if (had_err) {
+          return cb(had_err !== true
+                    ? had_err
+                    : new Error(&#x27;Unable to bind to &#x27; + socketPath));
+        }
+
+        cb();
+      });
+    }
+
+    return this._sshstream.openssh_streamLocalForward(socketPath, wantReply);
+  } else if (wantReply) {
+    process.nextTick(function() {
+      cb(new Error(&#x27;strictVendor enabled and server is not OpenSSH or compatible version&#x27;));
+    });
+  }
+
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.prototype.openssh_forwardOutStreamLocal" id="apidoc.element.ssh2.Client.prototype.openssh_forwardOutStreamLocal">
+        function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>openssh_forwardOutStreamLocal
+        <span class="apidocSignatureSpan">(socketPath, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">openssh_forwardOutStreamLocal = function (socketPath, cb) {
+  if (!this._sock
+      || !this._sock.writable
+      || !this._sshstream
+      || !this._sshstream.writable)
+    throw new Error(&#x27;Not connected&#x27;);
+
+  if (!this.config.strictVendor
+      || (this.config.strictVendor &#x26;&#x26; RE_OPENSSH.test(this._remoteVer))) {
+    var cfg = { socketPath: socketPath };
+    return openChannel(this, &#x27;direct-streamlocal@openssh.com&#x27;, cfg, cb);
+  } else {
+    process.nextTick(function() {
+      cb(new Error(&#x27;strictVendor enabled and server is not OpenSSH or compatible version&#x27;));
+    });
+  }
+
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.prototype.openssh_noMoreSessions" id="apidoc.element.ssh2.Client.prototype.openssh_noMoreSessions">
+        function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>openssh_noMoreSessions
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">openssh_noMoreSessions = function (cb) {
+  if (!this._sock
+      || !this._sock.writable
+      || !this._sshstream
+      || !this._sshstream.writable)
+    throw new Error(&#x27;Not connected&#x27;);
+
+  var wantReply = (typeof cb === &#x27;function&#x27;);
+
+  if (!this.config.strictVendor
+      || (this.config.strictVendor &#x26;&#x26; RE_OPENSSH.test(this._remoteVer))) {
+    if (wantReply) {
+      this._callbacks.push(function(had_err) {
+        if (had_err) {
+          return cb(had_err !== true
+                    ? had_err
+                    : new Error(&#x27;Unable to disable future sessions&#x27;));
+        }
+
+        cb();
+      });
+    }
+
+    return this._sshstream.openssh_noMoreSessions(wantReply);
+  } else if (wantReply) {
+    process.nextTick(function() {
+      cb(new Error(&#x27;strictVendor enabled and server is not OpenSSH or compatible version&#x27;));
+    });
+  }
+
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.prototype.openssh_unforwardInStreamLocal" id="apidoc.element.ssh2.Client.prototype.openssh_unforwardInStreamLocal">
+        function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>openssh_unforwardInStreamLocal
+        <span class="apidocSignatureSpan">(socketPath, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">openssh_unforwardInStreamLocal = function (socketPath, cb) {
+  if (!this._sock
+      || !this._sock.writable
+      || !this._sshstream
+      || !this._sshstream.writable)
+    throw new Error(&#x27;Not connected&#x27;);
+
+  var wantReply = (typeof cb === &#x27;function&#x27;);
+
+  if (!this.config.strictVendor
+      || (this.config.strictVendor &#x26;&#x26; RE_OPENSSH.test(this._remoteVer))) {
+    if (wantReply) {
+      this._callbacks.push(function(had_err) {
+        if (had_err) {
+          return cb(had_err !== true
+                    ? had_err
+                    : new Error(&#x27;Unable to unbind on &#x27; + socketPath));
+        }
+
+        cb();
+      });
+    }
+
+    return this._sshstream.openssh_cancelStreamLocalForward(socketPath, wantReply);
+  } else if (wantReply) {
+    process.nextTick(function() {
+      cb(new Error(&#x27;strictVendor enabled and server is not OpenSSH or compatible version&#x27;));
+    });
+  }
+
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.prototype.sftp" id="apidoc.element.ssh2.Client.prototype.sftp">
+        function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>sftp
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sftp = function (cb) {
+  if (!this._sock
+      || !this._sock.writable
+      || !this._sshstream
+      || !this._sshstream.writable)
+    throw new Error(&#x27;Not connected&#x27;);
+
+  var self = this;
+
+  // start an SFTP session
+  return openChannel(this, &#x27;session&#x27;, function(err, chan) {
+    if (err)
+      return cb(err);
+
+    reqSubsystem(chan, &#x27;sftp&#x27;, function(err, stream) {
+      if (err)
+        return cb(err);
+
+      var serverIdentRaw = self._sshstream._state.incoming.identRaw;
+      var cfg = { debug: self.config.debug };
+      var sftp = new SFTPStream(cfg, serverIdentRaw);
+
+      function onError(err) {
+        sftp.removeListener(&#x27;ready&#x27;, onReady);
+        stream.removeListener(&#x27;exit&#x27;, onExit);
+        cb(err);
+      }
+
+      function onReady() {
+        sftp.removeListener(&#x27;error&#x27;, onError);
+        stream.removeListener(&#x27;exit&#x27;, onExit);
+        cb(undefined, new SFTPWrapper(sftp));
+      }
+
+      function onExit(code, signal) {
+        sftp.removeListener(&#x27;ready&#x27;, onReady);
+        sftp.removeListener(&#x27;error&#x27;, onError);
+        var msg;
+        if (typeof code === &#x27;number&#x27;) {
+          msg = &#x27;Received exit code &#x27;
+                + code
+                + &#x27; while establishing SFTP session&#x27;;
+        } else {
+          msg = &#x27;Received signal &#x27;
+                + signal
+                + &#x27; while establishing SFTP session&#x27;;
+        }
+        var err = new Error(msg);
+        err.code = code;
+        err.signal = signal;
+        cb(err);
+      }
+
+      sftp.once(&#x27;error&#x27;, onError)
+          .once(&#x27;ready&#x27;, onReady)
+          .once(&#x27;close&#x27;, function() {
+            stream.end();
+          });
+
+      // OpenSSH server sends an exit-status if there was a problem spinning up
+      // an sftp server child process, so we listen for that here in order to
+      // properly raise an error.
+      stream.once(&#x27;exit&#x27;, onExit);
+
+      sftp.pipe(stream).pipe(sftp);
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+```javascript
+var Client = require(&#x27;ssh2&#x27;).Client;
+
+var conn = new Client();
+conn.on(&#x27;ready&#x27;, function() {
+console.log(&#x27;Client :: ready&#x27;);
+conn.<span class="apidocCodeKeywordSpan">sftp</span>(function(err, sftp) {
+  if (err) throw err;
+  sftp.readdir(&#x27;foo&#x27;, function(err, list) {
+    if (err) throw err;
+    console.dir(list);
+    conn.end();
+  });
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.prototype.shell" id="apidoc.element.ssh2.Client.prototype.shell">
+        function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>shell
+        <span class="apidocSignatureSpan">(wndopts, opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">shell = function (wndopts, opts, cb) {
+  if (!this._sock
+      || !this._sock.writable
+      || !this._sshstream
+      || !this._sshstream.writable)
+    throw new Error(&#x27;Not connected&#x27;);
+
+  // start an interactive terminal/shell session
+  var self = this;
+
+  if (typeof wndopts === &#x27;function&#x27;) {
+    cb = wndopts;
+    wndopts = opts = undefined;
+  } else if (typeof opts === &#x27;function&#x27;) {
+    cb = opts;
+    opts = undefined;
+  }
+  if (wndopts &#x26;&#x26; wndopts.x11 !== undefined) {
+    opts = wndopts;
+    wndopts = undefined;
+  }
+
+  return openChannel(this, &#x27;session&#x27;, function(err, chan) {
+    if (err)
+      return cb(err);
+
+    var todo = [];
+
+    function reqCb(err) {
+      if (err) {
+        chan.close();
+        return cb(err);
+      }
+      if (todo.length)
+        todo.shift()();
+    }
+
+    if (self.config.allowAgentFwd === true
+        || (opts
+            &#x26;&#x26; opts.agentForward === true
+            &#x26;&#x26; self.config.agent !== undefined)) {
+      todo.push(function() {
+        reqAgentFwd(chan, reqCb);
+      });
+    }
+
+    if (wndopts !== false)
+      todo.push(function() { reqPty(chan, wndopts, reqCb); });
+
+    if (typeof opts === &#x27;object&#x27;) {
+      if (typeof opts.x11 === &#x27;object&#x27;
+          || opts.x11 === &#x27;number&#x27;
+          || opts.x11 === true)
+        todo.push(function() { reqX11(chan, opts.x11, reqCb); });
+    }
+
+    todo.push(function() { reqShell(chan, cb); });
+    todo.shift()();
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+```javascript
+var Client = require(&#x27;ssh2&#x27;).Client;
+
+var conn = new Client();
+conn.on(&#x27;ready&#x27;, function() {
+console.log(&#x27;Client :: ready&#x27;);
+conn.<span class="apidocCodeKeywordSpan">shell</span>(function(err, stream) {
+  if (err) throw err;
+  stream.on(&#x27;close&#x27;, function() {
+    console.log(&#x27;Stream :: close&#x27;);
+    conn.end();
+  }).on(&#x27;data&#x27;, function(data) {
+    console.log(&#x27;STDOUT: &#x27; + data);
+  }).stderr.on(&#x27;data&#x27;, function(data) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.prototype.subsys" id="apidoc.element.ssh2.Client.prototype.subsys">
+        function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>subsys
+        <span class="apidocSignatureSpan">(name, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">subsys = function (name, cb) {
+  if (!this._sock
+      || !this._sock.writable
+      || !this._sshstream
+      || !this._sshstream.writable)
+    throw new Error(&#x27;Not connected&#x27;);
+
+	return openChannel(this, &#x27;session&#x27;, function(err, chan) {
+		if (err)
+			return cb(err);
+
+		reqSubsystem(chan, name, function(err, stream) {
+			if (err)
+				return cb(err);
+
+			cb(undefined, stream);
+		});
+	});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+             &#x27;	&#x3c;/capabilities&#x3e;&#x27; +
+             &#x27;&#x3c;/hello&#x3e;]]&#x3e;]]&#x3e;&#x27;;
+
+var conn = new Client();
+
+conn.on(&#x27;ready&#x27;, function() {
+console.log(&#x27;Client :: ready&#x27;);
+conn.<span class="apidocCodeKeywordSpan">subsys</span>(&#x27;netconf&#x27;, function(err, stream) {
+  if (err) throw err;
+  stream.on(&#x27;data&#x27;, function(data) {
+    console.log(data);
+  }).write(xmlhello);
+});
+}).connect({
+host: &#x27;1.2.3.4&#x27;,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ssh2.Client.prototype.unforwardIn" id="apidoc.element.ssh2.Client.prototype.unforwardIn">
+        function <span class="apidocSignatureSpan">ssh2.Client.prototype.</span>unforwardIn
+        <span class="apidocSignatureSpan">(bindAddr, bindPort, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unforwardIn = function (bindAddr, bindPort, cb) {
+  if (!this._sock
+      || !this._sock.writable
+      || !this._sshstream
+      || !this._sshstream.writable)
+    throw new Error(&#x27;Not connected&#x27;);
+
+  // send a request to stop forwarding us new connections for a particular
+  // address and port
+
+  var self = this;
+  var wantReply = (typeof cb === &#x27;function&#x27;);
+
+  if (wantReply) {
+    this._callbacks.push(function(had_err) {
+      if (had_err) {
+        return cb(had_err !== true
+                  ? had_err
+                  : new Error(&#x27;Unable to unbind from &#x27;
+                              + bindAddr + &#x27;:&#x27; + bindPort));
+      }
+
+      delete self._forwarding[bindAddr + &#x27;:&#x27; + bindPort];
+
+      cb();
+    });
+  }
+
+  return this._sshstream.cancelTcpipForward(bindAddr, bindPort, wantReply);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
