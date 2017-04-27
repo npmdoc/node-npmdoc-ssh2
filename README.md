@@ -1,6 +1,6 @@
 # npmdoc-ssh2
 
-#### api documentation for  [ssh2 (v0.5.4)](https://github.com/mscdex/ssh2#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-ssh2.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ssh2) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ssh2.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ssh2)
+#### basic api documentation for  [ssh2 (v0.5.4)](https://github.com/mscdex/ssh2#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-ssh2.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ssh2) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ssh2.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ssh2)
 
 #### SSH2 client and server modules written in pure JavaScript for node.js
 
@@ -74,7 +74,8 @@
     "scripts": {
         "test": "node test/test.js"
     },
-    "version": "0.5.4"
+    "version": "0.5.4",
+    "bin": {}
 }
 ```
 
