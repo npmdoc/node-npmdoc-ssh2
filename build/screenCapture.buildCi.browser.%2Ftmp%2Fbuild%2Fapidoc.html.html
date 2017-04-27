@@ -2944,7 +2944,23 @@ conn.<span class="apidocCodeKeywordSpan">forwardOut</span>('192.168.100.102', 80
 
   return true;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+                  : new Error('Unable to disable future sessions'));
+      }
+
+      cb();
+    });
+  }
+
+  return this._sshstream.<span class="apidocCodeKeywordSpan">openssh_noMoreSessions</span>(wantReply);
+} else if (wantReply) {
+  process.nextTick(function() {
+    cb(new Error('strictVendor enabled and server is not OpenSSH or compatible version'));
+  });
+}
+
+return true;
+...</pre></li>
     </ul>
 
 
@@ -4069,7 +4085,22 @@ SFTPWrapper.prototype.fsetstat = function(handle, attrs, cb) {
     <li>description and source-code<pre class="apidocCodePre">read = function (handle, buf, off, len, position, cb) {
   return this._stream.readData(handle, buf, off, len, position, cb);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+++self._connections;
+socket.once('close', function(had_err) {
+  --self._connections;
+
+  // since joyent/node#993bb93e0a, we have to "read past EOF" in order to
+  // get an `end` event on streams. thankfully adding this does not
+  // negatively affect node versions pre-joyent/node#993bb93e0a.
+  sshstream.<span class="apidocCodeKeywordSpan">read</span>();
+}).on('error', function(err) {
+  sshstream.reset();
+  sshstream.emit('error', err);
+});
+
+var conncfg = streamcfg;
+...</pre></li>
     </ul>
 
 
@@ -4085,21 +4116,21 @@ SFTPWrapper.prototype.fsetstat = function(handle, attrs, cb) {
   return this._stream.readFile(path, options, callback_);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-SFTPWrapper.prototype.fastGet = function(remotePath, localPath, opts, cb) {
-  return this._stream.fastGet(remotePath, localPath, opts, cb);
-};
-SFTPWrapper.prototype.fastPut = function(localPath, remotePath, opts, cb) {
-  return this._stream.fastPut(localPath, remotePath, opts, cb);
-};
-SFTPWrapper.prototype.readFile = function(path, options, callback_) {
-  return this._stream.<span class="apidocCodeKeywordSpan">readFile</span>(path, options, callback_);
-};
-SFTPWrapper.prototype.writeFile = function(path, data, options, callback_) {
-  return this._stream.writeFile(path, data, options, callback_);
-};
-SFTPWrapper.prototype.appendFile = function(path, data, options, callback_) {
-  return this._stream.appendFile(path, data, options, callback_);
-};
+  if (process.platform === 'win32') {
+if (sockPath === 'pageant') {
+  // Pageant (PuTTY authentication agent)
+  sock = new PageantSock();
+} else {
+  // cygwin ssh-agent instance
+  var triedCygpath = false;
+  fs.<span class="apidocCodeKeywordSpan">readFile</span>(sockPath, function readCygsocket(err, data) {
+    if (err) {
+      if (triedCygpath)
+        return cb(new Error('Invalid cygwin unix socket path'));
+      // try using `cygpath` to convert a possible *nix-style path to the
+      // real Windows path before giving up ...
+      cp.exec('cygpath -w "' + sockPath + '"',
+              function(err, stdout, stderr) {
 ...</pre></li>
     </ul>
 
@@ -4764,7 +4795,22 @@ client._sock.removeListener('drain', ondrain);
     <li>description and source-code<pre class="apidocCodePre">getConnections = function (cb) {
   this._srv.getConnections(cb);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+
+Server.prototype.address = function() {
+  return this._srv.address();
+};
+
+Server.prototype.getConnections = function(cb) {
+  this._srv.<span class="apidocCodeKeywordSpan">getConnections</span>(cb);
+};
+
+Server.prototype.close = function(cb) {
+  this._srv.close(cb);
+  return this;
+};
+...</pre></li>
     </ul>
 
 
@@ -4810,7 +4856,21 @@ client._sock.removeListener('drain', ondrain);
     <li>description and source-code<pre class="apidocCodePre">ref = function () {
   this._srv.ref();
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Server.prototype.close = function(cb) {
+  this._srv.close(cb);
+  return this;
+};
+
+Server.prototype.ref = function() {
+  this._srv.<span class="apidocCodeKeywordSpan">ref</span>();
+};
+
+Server.prototype.unref = function() {
+  this._srv.unref();
+};
+...</pre></li>
     </ul>
 
 
@@ -4825,7 +4885,23 @@ client._sock.removeListener('drain', ondrain);
     <li>description and source-code<pre class="apidocCodePre">unref = function () {
   this._srv.unref();
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+
+Server.prototype.ref = function() {
+this._srv.ref();
+};
+
+Server.prototype.unref = function() {
+this._srv.<span class="apidocCodeKeywordSpan">unref</span>();
+};
+
+
+function Client(stream, socket) {
+EventEmitter.call(this);
+
+var self = this;
+...</pre></li>
     </ul>
 
 
@@ -4908,7 +4984,23 @@ client._sock.removeListener('drain', ondrain);
     stream._kacnt = 0;
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var sourceMsg = '&gt; ' + msg;
+var name = '{cyan-fg}{bold}' + source.name + '{/}';
+msg = ': ' + msg;
+for (var i = 0; i &lt; users.length; ++i) {
+  var user = users[i];
+  var output = user.output;
+  if (source === user)
+    output.<span class="apidocCodeKeywordSpan">add</span>(sourceMsg);
+  else
+    output.add(formatMessage(name, output) + msg);
+}
+}
+
+function localMessage(msg, source) {
+var output = source.output;
+...</pre></li>
     </ul>
 
 
@@ -5525,7 +5617,23 @@ if (this._timer) {
       return new Error('Unsupported EC private key type');
   }
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var MD5_HOST_FINGERPRINT = '64254520742d3d0792e918f3ce945a64';
+var KEY_RSA_BAD = fs.readFileSync(join(fixturesdir, 'bad_rsa_private_key'));
+var HOST_KEY_RSA = fs.readFileSync(join(fixturesdir, 'ssh_host_rsa_key'));
+var HOST_KEY_DSA = fs.readFileSync(join(fixturesdir, 'ssh_host_dsa_key'));
+var HOST_KEY_ECDSA = fs.readFileSync(join(fixturesdir, 'ssh_host_ecdsa_key'));
+var CLIENT_KEY_ENC_RSA = fs.readFileSync(join(fixturesdir, 'id_rsa_enc'));
+var CLIENT_KEY_ENC_RSA_PUB = utils.parseKey(CLIENT_KEY_ENC_RSA);
+utils.<span class="apidocCodeKeywordSpan">decryptKey</span>(CLIENT_KEY_ENC_RSA_PUB, 'foobarbaz');
+CLIENT_KEY_ENC_RSA_PUB = utils.genPublicKey(CLIENT_KEY_ENC_RSA_PUB);
+var CLIENT_KEY_PPK_RSA = fs.readFileSync(join(fixturesdir, 'id_rsa.ppk'));
+var CLIENT_KEY_PPK_RSA_PUB = utils.parseKey(CLIENT_KEY_PPK_RSA);
+var CLIENT_KEY_RSA = fs.readFileSync(join(fixturesdir, 'id_rsa'));
+var CLIENT_KEY_RSA_PUB = utils.genPublicKey(utils.parseKey(CLIENT_KEY_RSA));
+var CLIENT_KEY_DSA = fs.readFileSync(join(fixturesdir, 'id_dsa'));
+var CLIENT_KEY_DSA_PUB = utils.genPublicKey(utils.parseKey(CLIENT_KEY_DSA));
+...</pre></li>
     </ul>
 
 
